@@ -1,0 +1,65 @@
+{
+  "name": "chmsu-idm",
+  "version": "1.0.0",
+  "description": "Master App Template for future project releases",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "nodemon": "nodemon index.js",
+    "build": "pkg . --out-path dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmeguizo/chmsu-idm.git"
+  },
+  "keywords": [
+    "angular",
+    "2+",
+    "mean",
+    "stack",
+    "master",
+    "app"
+  ],
+  "author": "mark oliver meguizo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmeguizo/chmsu-idm.git/issues"
+  },
+  "homepage": "https://github.com/mmeguizo/chmsu-idm.git#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.16.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "mongoose": "^6.6.4",
+    "rxjs": "^7.5.7",
+    "socket.io": "^4.5.2",
+    "uuid": "^9.0.0",
+    "winston": "^3.13.0",
+    "winston-mongodb": "^5.1.1"
+  },
+  "devDependencies": {
+    "formidable": "^2.0.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.0"
+  },
+  "pkg": {
+    "scripts": "index.js",
+    "targets": [
+      "node14-linux-x64",
+      "node14-macos-x64",
+      "node14-win-x64"
+    ],
+    "assets": [
+      "./uploads/files/**/*",
+      "./uploads/images/**/*",
+      "./node_modules/axios/**/*",
+      "./node_modules/docviewhelper/**/*"
+    ]
+  }
+}
